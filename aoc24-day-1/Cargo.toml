@@ -1,0 +1,10 @@
+[package]
+name = "aoc24-day-1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aoc-file = { git = "https://github.com/codersparks/aoc-rust-utils.git" }
+aoc-collections = { git = "https://github.com/codersparks/aoc-rust-utils.git" }
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
