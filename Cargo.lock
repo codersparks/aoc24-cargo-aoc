@@ -14,12 +14,12 @@ dependencies = [
 [[package]]
 name = "aoc-collections"
 version = "0.1.0"
-source = "git+https://github.com/codersparks/aoc-rust-utils.git#e7a0cf9aaaa01a24449a4771a8e0ee8b50136368"
+source = "git+https://github.com/codersparks/aoc-rust-utils.git#7b61d9e681515d098cf183c9cf1b8d82a4761857"
 
 [[package]]
 name = "aoc-generators"
 version = "0.1.0"
-source = "git+https://github.com/codersparks/aoc-rust-utils.git#e7a0cf9aaaa01a24449a4771a8e0ee8b50136368"
+source = "git+https://github.com/codersparks/aoc-rust-utils.git#7b61d9e681515d098cf183c9cf1b8d82a4761857"
 dependencies = [
  "regex",
 ]
