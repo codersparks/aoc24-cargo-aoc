@@ -49,7 +49,7 @@ impl LineProcessor for Day1LineProcessor {
 
 #[aoc_generator(day1)]
 pub fn input_generator(input: &str) -> Vec<(i32, i32)> {
-    aoc_generators::apply_processor_to_input(input, &Day1LineProcessor::new())
+    aoc_generators::apply_processor_to_input(input, &Day1LineProcessor::new(), true)
         .expect("Failed to process input")
 }
 
