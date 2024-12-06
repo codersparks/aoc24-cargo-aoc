@@ -8,8 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="Day 3 finished">
-      <change afterPath="$PROJECT_DIR$/input/2024/day3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day3.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day4.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_input/day4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_input/day4_cols.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_input/day4_diag.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_input/day4_rows.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
@@ -31,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="day2_attempt1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,43 +59,52 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2piHnQZep8rFqJOtQhH4vaofYG0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cargo.Run aoc24.executor&quot;: &quot;Debug&quot;,
-    &quot;Cargo.Test day1::tests.executor&quot;: &quot;Debug&quot;,
-    &quot;Cargo.Test day2::tests::test_is_safe.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test day3::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test day3::tests::test_part_1.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test day3::tests::test_part_2.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test day3::tests::test_part_2_b.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cargo.Run aoc24.executor": "Debug",
+    "Cargo.Test day1::tests.executor": "Debug",
+    "Cargo.Test day2::tests::test_is_safe.executor": "Run",
+    "Cargo.Test day3::tests.executor": "Run",
+    "Cargo.Test day3::tests::test_part_1.executor": "Run",
+    "Cargo.Test day3::tests::test_part_2.executor": "Run",
+    "Cargo.Test day3::tests::test_part_2_b.executor": "Run",
+    "Cargo.Test day4::tests.executor": "Run",
+    "Cargo.Test day4::tests::test_check_board_for_word.executor": "Run",
+    "Cargo.Test day4::tests::test_check_cols_for_chars.executor": "Run",
+    "Cargo.Test day4::tests::test_check_diag_for_chars.executor": "Run",
+    "Cargo.Test day4::tests::test_part_2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "day4__attempt2",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/home/sparks/dev/rust/aoc24/test_input",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.first.attach.projects": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12053182" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.12053182" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07301657" />
+      <window_info id="Commit" order="1" weight="0.07301657" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -102,14 +114,15 @@
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.31270537" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.31270537" />
-      <window_info anchor="bottom" id="Build" order="4" weight="0.3300578" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.3300578" />
-      <window_info anchor="bottom" id="Services" order="6" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.31270537" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.51752466" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.51752466" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.51752466" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.31270537" />
+      <window_info anchor="bottom" id="Services" order="7" />
       <window_info anchor="right" id="PR AI Assistant" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.33020926" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.1994333" />
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
@@ -118,7 +131,12 @@
       <window_info anchor="right" id="RustCargo" order="6" weight="0.2" />
     </layout>
   </component>
-  <component name="RunManager" selected="Cargo.Test day3::tests::test_part_2_b">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_input" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cargo.Test day4::tests::test_part_2">
     <configuration name="Run aoc24" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="dev" />
       <option name="command" value="run --package aoc24 --bin aoc24" />
@@ -154,9 +172,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day2::tests::test_is_safe" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="buildProfileId" value="test" />
-      <option name="command" value="test --package aoc24 --lib day2::tests::test_is_safe -- --exact" />
+    <configuration name="Test day4::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day4::tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -172,8 +189,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day3::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day3::tests" />
+    <configuration name="Test day4::tests::test_check_board_for_word" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day4::tests::test_check_board_for_word -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -189,8 +206,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day3::tests::test_part_1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day3::tests::test_part_1 -- --exact" />
+    <configuration name="Test day4::tests::test_check_cols_for_chars" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day4::tests::test_check_cols_for_chars -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -206,8 +223,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day3::tests::test_part_2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day3::tests::test_part_2 -- --exact" />
+    <configuration name="Test day4::tests::test_check_diag_for_chars" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day4::tests::test_check_diag_for_chars -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -223,8 +240,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day3::tests::test_part_2_b" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day3::tests::test_part_2_b -- --exact" />
+    <configuration name="Test day4::tests::test_part_2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day4::tests::test_part_2 -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -242,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test day3::tests::test_part_2_b" />
-        <item itemvalue="Cargo.Test day3::tests::test_part_2" />
-        <item itemvalue="Cargo.Test day3::tests::test_part_1" />
-        <item itemvalue="Cargo.Test day3::tests" />
-        <item itemvalue="Cargo.Test day2::tests::test_is_safe" />
+        <item itemvalue="Cargo.Test day4::tests::test_part_2" />
+        <item itemvalue="Cargo.Test day4::tests" />
+        <item itemvalue="Cargo.Test day4::tests::test_check_board_for_word" />
+        <item itemvalue="Cargo.Test day4::tests::test_check_diag_for_chars" />
+        <item itemvalue="Cargo.Test day4::tests::test_check_cols_for_chars" />
       </list>
     </recent_temporary>
   </component>
