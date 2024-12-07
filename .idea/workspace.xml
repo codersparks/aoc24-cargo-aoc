@@ -7,16 +7,17 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="Day 3 finished">
-      <change afterPath="$PROJECT_DIR$/src/day4.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_input/day4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_input/day4_cols.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_input/day4_diag.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_input/day4_rows.txt" afterDir="false" />
+    <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="Day 4 finished">
+      <change afterPath="$PROJECT_DIR$/src/day5.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_input/2024/day5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day4.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/day4.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_input/2024/day4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/day4_cols.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_input/2024/day4_cols.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/day4_diag.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_input/2024/day4_diag.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/day4_rows.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_input/2024/day4_rows.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/codersparks/aoc24.git&quot;,
     &quot;accountId&quot;: &quot;607390f0-e23a-4c0d-8474-67793a293d5b&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;codersparks&quot;,
+    &quot;repository&quot;: &quot;aoc24&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -80,10 +91,18 @@
     "Cargo.Test day4::tests::test_check_cols_for_chars.executor": "Run",
     "Cargo.Test day4::tests::test_check_diag_for_chars.executor": "Run",
     "Cargo.Test day4::tests::test_part_2.executor": "Run",
+    "Cargo.Test day5::test_generate_order_hashmap.executor": "Run",
+    "Cargo.Test day5::tests.executor": "Run",
+    "Cargo.Test day5::tests::test_generate_order_hashmap.executor": "Run",
+    "Cargo.Test day5::tests::test_part1.executor": "Run",
+    "Cargo.Test day5::tests::test_part2.executor": "Run",
+    "Cargo.Test day5::tests::test_safety_page_orderer_cmp.executor": "Run",
+    "Cargo.Test day5::tests::test_safety_page_orderer_is_ordered.executor": "Run",
+    "Cargo.Test day5::tests::test_split_input_into_sections.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "git-widget-placeholder": "day4__attempt2",
+    "git-widget-placeholder": "day5__attempt1",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/sparks/dev/rust/aoc24/test_input",
     "node.js.detected.package.eslint": "true",
@@ -102,10 +121,11 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
-      <window_info id="Pull Requests" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07301657" />
-      <window_info id="Commit" order="1" weight="0.07301657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07127289" />
+      <window_info id="Commit" order="1" weight="0.1179163" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Activity" order="3" show_stripe_button="false" weight="0.07127289" />
+      <window_info id="Pull Requests" order="3" weight="0.1179163" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="TODO" />
@@ -115,10 +135,10 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.31270537" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.51752466" />
-      <window_info anchor="bottom" id="Build" order="4" weight="0.51752466" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.51752466" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.31270537" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.46385542" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.46385542" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.46385542" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.46385542" />
       <window_info anchor="bottom" id="Services" order="7" />
       <window_info anchor="right" id="PR AI Assistant" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -135,8 +155,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_input" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_input/2024" />
+    </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test day4::tests::test_part_2">
+  <component name="RunManager" selected="Cargo.Test day5::tests::test_part2">
     <configuration name="Run aoc24" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="dev" />
       <option name="command" value="run --package aoc24 --bin aoc24" />
@@ -172,8 +195,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day4::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day4::tests" />
+    <configuration name="Test day5::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day5::tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -189,8 +212,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day4::tests::test_check_board_for_word" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day4::tests::test_check_board_for_word -- --exact" />
+    <configuration name="Test day5::tests::test_part1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day5::tests::test_part1 -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -206,8 +229,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day4::tests::test_check_cols_for_chars" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day4::tests::test_check_cols_for_chars -- --exact" />
+    <configuration name="Test day5::tests::test_part2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day5::tests::test_part2 -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -223,8 +246,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day4::tests::test_check_diag_for_chars" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day4::tests::test_check_diag_for_chars -- --exact" />
+    <configuration name="Test day5::tests::test_safety_page_orderer_cmp" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day5::tests::test_safety_page_orderer_cmp -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -240,8 +263,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day4::tests::test_part_2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day4::tests::test_part_2 -- --exact" />
+    <configuration name="Test day5::tests::test_safety_page_orderer_is_ordered" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day5::tests::test_safety_page_orderer_is_ordered -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -259,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test day4::tests::test_part_2" />
-        <item itemvalue="Cargo.Test day4::tests" />
-        <item itemvalue="Cargo.Test day4::tests::test_check_board_for_word" />
-        <item itemvalue="Cargo.Test day4::tests::test_check_diag_for_chars" />
-        <item itemvalue="Cargo.Test day4::tests::test_check_cols_for_chars" />
+        <item itemvalue="Cargo.Test day5::tests::test_part2" />
+        <item itemvalue="Cargo.Test day5::tests::test_part1" />
+        <item itemvalue="Cargo.Test day5::tests::test_safety_page_orderer_is_ordered" />
+        <item itemvalue="Cargo.Test day5::tests::test_safety_page_orderer_cmp" />
+        <item itemvalue="Cargo.Test day5::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +307,26 @@
       <workItem from="1733250772920" duration="155000" />
       <workItem from="1733250934697" duration="8577000" />
       <workItem from="1733309524011" duration="1522000" />
+      <workItem from="1733489110191" duration="9720000" />
+      <workItem from="1733568016516" duration="6091000" />
     </task>
+    <task id="LOCAL-00001" summary="Day 4 finished">
+      <option name="closed" value="true" />
+      <created>1733489203958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733489203958</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Day 4 finished">
+      <option name="closed" value="true" />
+      <created>1733489325348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733489325348</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +335,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update commit" />
     <MESSAGE value="Day 3 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 3 finished" />
+    <MESSAGE value="Day 4 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 4 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

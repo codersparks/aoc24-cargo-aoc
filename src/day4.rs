@@ -118,37 +118,36 @@ mod tests {
 
     #[test]
     fn test_check_rows_for_chars() {
-        let board = input_generator(read_to_string("test_input/day4_rows.txt").unwrap().as_str());
+        let board = input_generator(read_to_string("../test_input/2024/day4_rows.txt").unwrap().as_str());
         let result = check_rows_for_chars(&"XMAS".chars().collect(), &"SAMX".chars().collect(), &board);
         assert_eq!(result, 4);
     }
 
     #[test]
     fn test_check_cols_for_chars() {
-        let board = input_generator(read_to_string("test_input/day4_cols.txt").unwrap().as_str());
+        let board = input_generator(read_to_string("../test_input/2024/day4_cols.txt").unwrap().as_str());
         let result = check_cols_for_chars(&"XMAS".chars().collect(), &"SAMX".chars().collect(), &board);
         assert_eq!(result, 5);
     }
 
     #[test]
     fn test_check_diag_for_chars() {
-        let board = input_generator(read_to_string("test_input/day4_diag.txt").unwrap().as_str());
+        let board = input_generator(read_to_string("../test_input/2024/day4_diag.txt").unwrap().as_str());
         let result = check_diag_for_chars(&"XMAS".chars().collect(), &"SAMX".chars().collect(), &board);
         assert_eq!(result, 4);
     }
 
     #[test]
     fn test_check_board_for_word() {
-        let board = input_generator(read_to_string("test_input/day4.txt").unwrap().as_str());
+        let board = input_generator(read_to_string("../test_input/2024/day4.txt").unwrap().as_str());
         let result = check_board_for_word(&"XMAS".chars().collect(), &"SAMX".chars().collect(), &board);
         assert_eq!(result, 18);
     }
 
     #[test]
     fn test_part_2() {
-        let board = input_generator(read_to_string("test_input/day4.txt").unwrap().as_str());
+        let board = input_generator(read_to_string("../test_input/2024/day4.txt").unwrap().as_str());
         let result = part_2(&board);
-
         assert_eq!(result, 9);
     }
 
