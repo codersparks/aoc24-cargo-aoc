@@ -7,12 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="Updated workspace.xml">
-      <change afterPath="$PROJECT_DIR$/.devcontainer/install-deps.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/devcontainer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="Day 4 finished" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +18,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Rust File" />
-        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -41,22 +35,22 @@
     &quot;assignee&quot;: &quot;codersparks&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/codersparks/aoc24.git&quot;,
-    &quot;accountId&quot;: &quot;f01757d1-9abb-4806-86b5-ba7d904f89fa&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:codersparks/aoc24.git",
+    "accountId": "607390f0-e23a-4c0d-8474-67793a293d5b"
   },
-  &quot;recentNewPullRequestHead&quot;: {
-    &quot;server&quot;: {
-      &quot;useHttp&quot;: false,
-      &quot;host&quot;: &quot;github.com&quot;,
-      &quot;port&quot;: null,
-      &quot;suffix&quot;: null
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
     },
-    &quot;owner&quot;: &quot;codersparks&quot;,
-    &quot;repository&quot;: &quot;aoc24&quot;
+    "owner": "codersparks",
+    "repository": "aoc24"
   }
-}</component>
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="wmydj23c" />
   </component>
@@ -94,11 +88,10 @@
     "Cargo.Test day5::tests::test_safety_page_orderer_cmp.executor": "Run",
     "Cargo.Test day5::tests::test_safety_page_orderer_is_ordered.executor": "Run",
     "Cargo.Test day5::tests::test_split_input_into_sections.executor": "Run",
-    "Docker..devcontainer/Dockerfile.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/sparks/dev/rust/aoc24/test_input",
     "node.js.detected.package.eslint": "true",
@@ -155,7 +148,7 @@
       <recent name="$PROJECT_DIR$/test_input/2024" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker..devcontainer/Dockerfile">
+  <component name="RunManager" selected="Cargo.Test day5::tests::test_part2">
     <configuration name="Run aoc24" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="dev" />
       <option name="command" value="run --package aoc24 --bin aoc24" />
@@ -176,6 +169,23 @@
     </configuration>
     <configuration name="Test aoc24" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="test --workspace" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test day5::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package aoc24 --lib day5::tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -259,25 +269,13 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name=".devcontainer/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value=".devcontainer/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker..devcontainer/Dockerfile" />
         <item itemvalue="Cargo.Test day5::tests::test_part2" />
         <item itemvalue="Cargo.Test day5::tests::test_part1" />
         <item itemvalue="Cargo.Test day5::tests::test_safety_page_orderer_is_ordered" />
         <item itemvalue="Cargo.Test day5::tests::test_safety_page_orderer_cmp" />
+        <item itemvalue="Cargo.Test day5::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -301,10 +299,6 @@
       <workItem from="1733489110191" duration="9720000" />
       <workItem from="1733568016516" duration="6091000" />
       <workItem from="1733656016351" duration="497000" />
-      <workItem from="1733946449005" duration="298000" />
-      <workItem from="1733946765119" duration="10000" />
-      <workItem from="1733947136719" duration="779000" />
-      <workItem from="1733948679835" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Day 4 finished">
       <option name="closed" value="true" />
@@ -322,23 +316,7 @@
       <option name="project" value="LOCAL" />
       <updated>1733489325348</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added dev container">
-      <option name="closed" value="true" />
-      <created>1733949023696</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1733949023696</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated workspace.xml">
-      <option name="closed" value="true" />
-      <created>1733949071124</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1733949071124</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,9 +326,7 @@
     <MESSAGE value="Update commit" />
     <MESSAGE value="Day 3 finished" />
     <MESSAGE value="Day 4 finished" />
-    <MESSAGE value="Added dev container" />
-    <MESSAGE value="Updated workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 4 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

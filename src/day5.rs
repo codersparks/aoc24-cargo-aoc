@@ -1,6 +1,6 @@
 use std::cmp::Ordering;
 use std::collections::HashMap;
-use aoc_collections::{find_middle_element, FindMiddleElementMode};
+use aoc_collections::search::{find_middle_element, FindMiddleElementMode};
 
 struct SafetyPageOrderer {
     page_mappings: HashMap<u32, Vec<u32>>
