@@ -52,7 +52,7 @@ impl Display for Guard {
 
 impl Guard {
     pub fn new(starting_row: usize, starting_column: usize, starting_direction: Direction) -> Guard {
-        Guard {
+        let mut g = Guard {
             starting_row,
             starting_column,
             starting_direction,
@@ -60,7 +60,10 @@ impl Guard {
             travelled_distances: Vec::new(),
             visited_cells: HashSet::new(),
             left_maze: false
-        }
+        };
+
+        g.visited_cells.insert((starting_row, starting_column));
+        g
     }
 
     pub fn get_current_state(&self) -> Option<(&Direction, usize, usize)> {
@@ -83,6 +86,7 @@ impl Guard {
             match current_direction {
                 Direction::Up => {
                     let col_view = board.column(column);
+                    println!("Column View: {:?}", col_view);
                     let mut i = row;
                     loop {
                         if *col_view.get(i).unwrap() == '#' {
@@ -108,6 +112,7 @@ impl Guard {
                 }
                 Direction::Down => {
                     let col_view = board.column(column);
+                    println!("Column View: {:?}", col_view);
                     for i in row..col_view.len() {
                         if *col_view.get(i).unwrap() == '#' {
                             let turn = GuardTurn {
@@ -127,6 +132,7 @@ impl Guard {
                 }
                 Direction::Left => {
                     let row_view = board.row(row);
+                    println!("RowView: {:?}", row_view);
                     let mut i = row;
                     loop {
                         if *row_view.get(i).unwrap() == '#' {
@@ -152,6 +158,7 @@ impl Guard {
                 }
                 Direction::Right => {
                     let row_view = board.row(row);
+                    println!("RowView: {:?}", row_view);
                     for i in column..row_view.len() {
                         if *row_view.get(i).unwrap() == '#' {
                             let turn = GuardTurn {
@@ -179,7 +186,8 @@ impl Guard {
 
     pub fn patrol(&mut self, board: &Array2<char>) -> usize {
         while self.move_to_next_turn(board).is_some() {
-            println!("Distance: {}, Last turn: {:?}", self.travelled_distances.last().unwrap(), self.turns.last().unwrap())
+            println!("Distance: {}, Last turn: {:?}", self.travelled_distances.last().unwrap(), self.turns.last().unwrap());
+            println!("{:?}", self.visited_cells.len());
         }
 
         println!("Cells Visited: {:?}, Total: {}", self.visited_cells, self.visited_cells.len());
@@ -215,8 +223,10 @@ fn part1(input: &(Array2<char>, Guard)) -> u32 {
     let (board, guard) = input;
     println!("{:?}", board);
 
+    let mut guard = guard.clone();
+    println!("{:?}", guard);
 
-    guard.clone().patrol(&board) as u32
+    guard.patrol(&board) as u32
 
 }
 
@@ -230,7 +240,10 @@ mod tests {
         let input = read_to_string("test_input/2024/day6/day6.txt").unwrap();
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
-        guard.clone().patrol(&board);
+        let mut guard = guard.clone();
+        guard.patrol(&board);
+
+        assert_eq!(41, guard.visited_cells.len());
 
     }
 
