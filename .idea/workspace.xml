@@ -35,22 +35,22 @@
     &quot;assignee&quot;: &quot;codersparks&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:codersparks/aoc24.git",
-    "accountId": "607390f0-e23a-4c0d-8474-67793a293d5b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:codersparks/aoc24.git&quot;,
+    &quot;accountId&quot;: &quot;607390f0-e23a-4c0d-8474-67793a293d5b&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "codersparks",
-    "repository": "aoc24"
+    &quot;owner&quot;: &quot;codersparks&quot;,
+    &quot;repository&quot;: &quot;aoc24&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="wmydj23c" />
   </component>
@@ -66,45 +66,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cargo.Run aoc24.executor": "Debug",
-    "Cargo.Test day1::tests.executor": "Debug",
-    "Cargo.Test day2::tests::test_is_safe.executor": "Run",
-    "Cargo.Test day3::tests.executor": "Run",
-    "Cargo.Test day3::tests::test_part_1.executor": "Run",
-    "Cargo.Test day3::tests::test_part_2.executor": "Run",
-    "Cargo.Test day3::tests::test_part_2_b.executor": "Run",
-    "Cargo.Test day4::tests.executor": "Run",
-    "Cargo.Test day4::tests::test_check_board_for_word.executor": "Run",
-    "Cargo.Test day4::tests::test_check_cols_for_chars.executor": "Run",
-    "Cargo.Test day4::tests::test_check_diag_for_chars.executor": "Run",
-    "Cargo.Test day4::tests::test_part_2.executor": "Run",
-    "Cargo.Test day5::test_generate_order_hashmap.executor": "Run",
-    "Cargo.Test day5::tests.executor": "Run",
-    "Cargo.Test day5::tests::test_generate_order_hashmap.executor": "Run",
-    "Cargo.Test day5::tests::test_part1.executor": "Run",
-    "Cargo.Test day5::tests::test_part2.executor": "Run",
-    "Cargo.Test day5::tests::test_safety_page_orderer_cmp.executor": "Run",
-    "Cargo.Test day5::tests::test_safety_page_orderer_is_ordered.executor": "Run",
-    "Cargo.Test day5::tests::test_split_input_into_sections.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/sparks/dev/rust/aoc24/test_input",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "org.rust.first.attach.projects": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cargo.Run aoc24.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test day1::tests.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test day2::tests::test_is_safe.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day3::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day3::tests::test_part_1.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day3::tests::test_part_2.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day3::tests::test_part_2_b.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day4::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day4::tests::test_check_board_for_word.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day4::tests::test_check_cols_for_chars.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day4::tests::test_check_diag_for_chars.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day4::tests::test_part_2.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::test_generate_order_hashmap.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests::test_generate_order_hashmap.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests::test_part1.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests::test_part2.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests::test_safety_page_orderer_cmp.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests::test_safety_page_orderer_is_ordered.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test day5::tests::test_split_input_into_sections.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sparks/dev/rust/aoc24/test_input&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
@@ -219,6 +219,7 @@
       </method>
     </configuration>
     <configuration name="Test day5::tests::test_part2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="buildProfileId" value="test" />
       <option name="command" value="test --package aoc24 --lib day5::tests::test_part2 -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
