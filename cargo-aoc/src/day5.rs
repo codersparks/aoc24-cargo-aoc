@@ -127,7 +127,7 @@ mod tests {
     #[test]
     fn test_part2() {
 
-        let input = read_to_string("test_input/2024/day5.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day5.txt").unwrap();
         let (order_map, page_sequence) = input_generator_day5(&input);
 
         let result = part2(&(order_map, page_sequence));
@@ -138,7 +138,7 @@ mod tests {
     #[test]
     fn test_part1() {
 
-        let input = read_to_string("test_input/2024/day5.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day5.txt").unwrap();
         let (order_map, page_sequence) = input_generator_day5(&input);
 
         let result = part1(&(order_map, page_sequence));

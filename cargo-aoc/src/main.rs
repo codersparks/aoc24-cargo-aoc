@@ -1,4 +1,4 @@
-extern crate aoc24;
+extern crate cargo_aoc;
 
 use aoc_runner_derive::aoc_main;
 

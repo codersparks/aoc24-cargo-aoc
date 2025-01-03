@@ -237,7 +237,7 @@ mod tests {
 
     #[test]
     fn test_patrol() {
-        let input = read_to_string("test_input/2024/day6/day6.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6.txt").unwrap();
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
         let mut guard = guard.clone();
@@ -249,7 +249,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_up_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_up_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_up_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -270,7 +270,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_up_no_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_up_no_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_up_no_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -287,7 +287,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_down_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_down_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_down_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -308,7 +308,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_down_no_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_down_no_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_down_no_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -325,7 +325,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_left_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_left_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_left_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -346,7 +346,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_left_no_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_left_no_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_left_no_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -363,7 +363,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_right_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_right_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_right_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);
@@ -384,7 +384,7 @@ mod tests {
 
     #[test]
     fn test_part_1_direction_right_no_obstruction() {
-        let input = read_to_string("test_input/2024/day6/day6_starting_right_no_obstruction.txt").unwrap();
+        let input = read_to_string("../../test_input/2024/day6/day6_starting_right_no_obstruction.txt").unwrap();
 
         let (board, guard) = input_generator_day6(&input);
         println!("{:?}", board);

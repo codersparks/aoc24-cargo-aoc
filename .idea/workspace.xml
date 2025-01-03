@@ -7,7 +7,36 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="Day 4 finished" />
+    <list default="true" id="6d4ac8cb-10f4-4db1-8a4b-363a82b8a808" name="Changes" comment="commit due to project structure redesign">
+      <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aoc24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aoc24.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day1.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/day1.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day2.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/day2.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day3.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/day3.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day4.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/day4.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day5.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/day5.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day6.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/day6.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day4_cols.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day4_cols.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day4_diag.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day4_diag.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day4_rows.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day4_rows.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_down_no_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_down_no_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_down_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_down_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_left_no_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_left_no_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_left_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_left_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_right_no_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_right_no_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_right_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_right_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_up_no_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_up_no_obstruction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input/2024/day6/day6_starting_up_obstruction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cargo-aoc/test_input/2024/day6/day6_starting_up_obstruction.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,22 +64,22 @@
     &quot;assignee&quot;: &quot;codersparks&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:codersparks/aoc24.git&quot;,
-    &quot;accountId&quot;: &quot;607390f0-e23a-4c0d-8474-67793a293d5b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:codersparks/aoc24.git",
+    "accountId": "a82e1175-8aad-4abe-8cf0-94bd2d6aaa46"
   },
-  &quot;recentNewPullRequestHead&quot;: {
-    &quot;server&quot;: {
-      &quot;useHttp&quot;: false,
-      &quot;host&quot;: &quot;github.com&quot;,
-      &quot;port&quot;: null,
-      &quot;suffix&quot;: null
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
     },
-    &quot;owner&quot;: &quot;codersparks&quot;,
-    &quot;repository&quot;: &quot;aoc24&quot;
+    "owner": "codersparks",
+    "repository": "aoc24"
   }
-}</component>
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="wmydj23c" />
   </component>
@@ -91,7 +120,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/sparks/dev/rust/aoc24/test_input&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -110,8 +139,8 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0429381" />
-      <window_info id="Commit" order="1" weight="0.1179163" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13203125" />
+      <window_info id="Commit" order="1" weight="0.057594478" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Activity" order="3" show_stripe_button="false" weight="0.07127289" />
       <window_info id="Pull Requests" order="4" weight="0.1179163" />
@@ -124,9 +153,9 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.31270537" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.43975905" />
-      <window_info anchor="bottom" id="Build" order="4" weight="0.46385542" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.46385542" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3754529" />
+      <window_info active="true" anchor="bottom" id="Build" order="4" visible="true" weight="0.3609496" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.41711956" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.46385542" />
       <window_info anchor="bottom" id="Services" order="7" />
       <window_info anchor="right" id="PR AI Assistant" />
@@ -145,140 +174,9 @@
       <recent name="$PROJECT_DIR$/test_input" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cargo-aoc" />
       <recent name="$PROJECT_DIR$/test_input/2024" />
     </key>
-  </component>
-  <component name="RunManager" selected="Cargo.Test day5::tests::test_part2">
-    <configuration name="Run aoc24" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="buildProfileId" value="dev" />
-      <option name="command" value="run --package aoc24 --bin aoc24" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test aoc24" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="test --workspace" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test day5::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day5::tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test day5::tests::test_part1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day5::tests::test_part1 -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test day5::tests::test_part2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="buildProfileId" value="test" />
-      <option name="command" value="test --package aoc24 --lib day5::tests::test_part2 -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test day5::tests::test_safety_page_orderer_cmp" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day5::tests::test_safety_page_orderer_cmp -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test day5::tests::test_safety_page_orderer_is_ordered" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package aoc24 --lib day5::tests::test_safety_page_orderer_is_ordered -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.Test day5::tests::test_part2" />
-        <item itemvalue="Cargo.Test day5::tests::test_part1" />
-        <item itemvalue="Cargo.Test day5::tests::test_safety_page_orderer_is_ordered" />
-        <item itemvalue="Cargo.Test day5::tests::test_safety_page_orderer_cmp" />
-        <item itemvalue="Cargo.Test day5::tests" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -300,6 +198,7 @@
       <workItem from="1733489110191" duration="9720000" />
       <workItem from="1733568016516" duration="6091000" />
       <workItem from="1733656016351" duration="497000" />
+      <workItem from="1734261366801" duration="3612000" />
     </task>
     <task id="LOCAL-00001" summary="Day 4 finished">
       <option name="closed" value="true" />
@@ -317,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733489325348</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit due to project structure redesign">
+      <option name="closed" value="true" />
+      <created>1734176944017</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734176944017</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,18 +234,19 @@
     <MESSAGE value="Update commit" />
     <MESSAGE value="Day 3 finished" />
     <MESSAGE value="Day 4 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 4 finished" />
+    <MESSAGE value="commit due to project structure redesign" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit due to project structure redesign" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/day1.rs</url>
+          <url>file://$PROJECT_DIR$/cargo-aoc/src/day1.rs</url>
           <line>130</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/day1.rs</url>
+          <url>file://$PROJECT_DIR$/cargo-aoc/src/day1.rs</url>
           <line>15</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
